@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
+    assetModuleFilename: 'assets/[name][ext]',
   },
   module: {
     rules: [
@@ -27,8 +28,9 @@ module.exports = {
         use: [ "style-loader", "css-loader"]
       },
       {
-        test: /\.png|svg|jpg|gif$/,
-        use: [ "file-loader"]
+        test: /\.(?:ico|png|svg|jpg|jpeg|gif)$/i,
+        // use: [ "file-loader"]
+        type: 'asset/resource',
       }
     ],
   },
