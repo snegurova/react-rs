@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+    max-width: 300px;
+    width: 30.33%;
+}
+
+.card:not(:nth-child(3n)) {
+    margin-right: 3%;
+}
+
+.adult {
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card__info {
+    padding: 20px;
+    border: 1px solid #a9a9a9;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+}
